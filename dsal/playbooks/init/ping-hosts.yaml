@@ -1,0 +1,16 @@
+
+
+- hosts: metal_hosts
+  vars_files: 
+  - "{{ secrets_file }}"
+  tasks: 
+
+    - name: "Ping first metal host from all"
+      shell: |
+        ping dell-r640-031.dsal.lab.eng.tlv2.redhat.com -c 1
+
+    - name: "Host iDRAC url"
+      debug: 
+        msg: "{{ idrac }}"
+
+      

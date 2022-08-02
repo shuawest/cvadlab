@@ -1,0 +1,24 @@
+
+
+- hosts: client
+  vars_files: 
+  - "{{ secrets_file }}"
+  tasks: 
+
+    - name: "Configure passwordless SSH for each host"
+      with_items: "{{ groups['metal_hosts'] }}"
+      loop_control:
+        loop_var: target_host
+      shell: |
+        cat >/tmp/sshcopy.expect <<EOL
+        #!/usr/bin/expect -f
+        spawn ssh-copy-id \$argv
+        expect "Are you sure you want to continue connecting (yes/no/.*)?"
+        send "yes\n"
+        expect ".* password:"
+        send "{{ metal_pass }}\n"
+        expect eof
+        EOL
+        chmod a+x /tmp/sshcopy.expect
+        /tmp/sshcopy.expect {{ metal_user }}@{{ target_host }}
+        rm /tmp/sshcopy.expect

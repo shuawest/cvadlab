@@ -1,0 +1,18 @@
+---
+
+dns_cvad_kubevirt_provider: awsroute53
+dns_cvad_kubevirt_zone: milabs.io
+dns_cvad_kubevirt_base_domain: cvadlab.milabs.io
+dns_cvad_kubevirt_cluster_name: kubevirt
+dns_cvad_kubevirt_api: "api.{{ dns_cvad_kubevirt_cluster_name }}.{{ dns_cvad_kubevirt_base_domain }}" 
+dns_cvad_kubevirt_routes: "*.apps.{{ dns_cvad_kubevirt_cluster_name }}.{{ dns_cvad_kubevirt_base_domain }}" 
+dns_cvad_kubevirt_ip: 10.46.27.16 
+
+dns_cvad_mgmt_provider: awsroute53
+dns_cvad_mgmt_zone: milabs.io
+dns_cvad_mgmt_base_domain: cvadlab.milabs.io
+dns_cvad_mgmt_cluster_name: mgmt
+dns_cvad_mgmt_api: "api.{{ dns_cvad_mgmt_cluster_name }}.{{ dns_cvad_mgmt_base_domain }}"
+dns_cvad_mgmt_routes: "*.apps.{{ dns_cvad_mgmt_cluster_name }}.{{ dns_cvad_mgmt_base_domain }}" 
+dns_cvad_mgmt_ip: 10.46.27.17
+
