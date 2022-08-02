@@ -6,6 +6,8 @@
 - hosts: client
   vars_files: 
   - "{{ aws_secrets_file }}"
+  vars: 
+    ansible_python_interpreter: /usr/local/bin/python3
   tasks: 
 
   - name: Gather DNS records

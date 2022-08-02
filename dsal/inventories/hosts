@@ -14,6 +14,9 @@ dell-r640-038.dsal.lab.eng.tlv2.redhat.com
 secrets_file="{{ playbook_dir }}/../../cvadlab-dsal-secrets" 
 aws_secrets_file="{{ playbook_dir }}/../../aws-secrets" 
 
+[client:vars]
+ansible_python_interpreter=/usr/local/bin/python3
+
 
 [metal_hosts]
 dell-r640-031.dsal.lab.eng.tlv2.redhat.com
