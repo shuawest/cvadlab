@@ -10,14 +10,6 @@ dell-r640-036.dsal.lab.eng.tlv2.redhat.com
 dell-r640-037.dsal.lab.eng.tlv2.redhat.com
 dell-r640-038.dsal.lab.eng.tlv2.redhat.com
 
-[all:vars]
-secrets_file="{{ playbook_dir }}/../../cvadlab-dsal-secrets" 
-aws_secrets_file="{{ playbook_dir }}/../../aws-secrets" 
-
-[client:vars]
-ansible_python_interpreter=/usr/local/bin/python3
-
-
 [metal_hosts]
 dell-r640-031.dsal.lab.eng.tlv2.redhat.com
 dell-r640-032.dsal.lab.eng.tlv2.redhat.com
@@ -27,9 +19,6 @@ dell-r640-035.dsal.lab.eng.tlv2.redhat.com
 dell-r640-036.dsal.lab.eng.tlv2.redhat.com
 dell-r640-037.dsal.lab.eng.tlv2.redhat.com
 dell-r640-038.dsal.lab.eng.tlv2.redhat.com
-
-[metal_hosts:vars]
-ansible_user="{{ metal_user }}"
 
 
 

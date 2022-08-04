@@ -8,37 +8,19 @@
   - "{{ aws_secrets_file }}"
   tasks: 
 
-  - name: Gather DNS records
-    set_fact: 
-      dns_records:
-        - zone: "{{ dns_cvad_kubevirt_zone }}"
-          type: A
-          record: "{{ dns_cvad_kubevirt_api }}"
-          ips: "{{ dns_cvad_kubevirt_ip }}"
-        - zone: "{{ dns_cvad_kubevirt_zone }}"
-          type: A
-          record: "{{ dns_cvad_kubevirt_routes }}"
-          ips: "{{ dns_cvad_kubevirt_ip }}"
-        - zone: "{{ dns_cvad_mgmt_zone }}"
-          type: A
-          record: "{{ dns_cvad_mgmt_api }}"
-          ips: "{{ dns_cvad_mgmt_ip }}"
-        - zone: "{{ dns_cvad_mgmt_zone }}"
-          type: A
-          record: "{{ dns_cvad_mgmt_routes }}"
-          ips: "{{ dns_cvad_mgmt_ip }}"
-
   - name: Update Route53
-    with_items: "{{ dns_records }}"
+    with_items: "{{ awsroute53_records }}"
     loop_control:
-      loop_var: dnsrec
+      loop_var: recname
+    vars: 
+      dnsrecord: "{{ awsroute53_records[recname] }}"
     community.aws.route53:
       state: present
-      zone: "{{ dnsrec.zone }}"
-      record: "{{ dnsrec.record }}"
-      type: "{{ dnsrec.type }}"
+      record: "{{ dnsrecord.record }}"
+      value: "{{ dnsrecord.ips }}"
+      zone: "{{ dnsrecord.zone }}"
+      type: "{{ dnsrecord.type }}"
       ttl: 7200
-      value: "{{ dnsrec.ips }}"
       wait: yes
 
 
