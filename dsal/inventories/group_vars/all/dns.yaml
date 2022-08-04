@@ -1,22 +1,22 @@
 ---
 
 dns_provider: awsroute53
-dns_zone:  milabs.io
+dns_zone: milabs.io
 dns_base_domain: cvadlab.milabs.io
-dns_virt_subdomain: kubevirt
-dns_virt_ips: 10.46.27.17
-dns_soc_subdomain: mgmt
+dns_virt_primary_subdomain: ocpvirt
+dns_virt_primary_ips: 10.46.27.17
+dns_soc_subdomain: soctl
 dns_soc_ips: 10.46.27.16
 
 awsroute53_records:
   virt_api:
-    record: "api.{{ dns_virt_subdomain }}.{{ dns_base_domain }}" 
-    ips: "{{ dns_virt_ips }}"
+    record: "api.{{ dns_virt_primary_subdomain }}.{{ dns_base_domain }}" 
+    ips: "{{ dns_virt_primary_ips }}"
     zone: "{{ dns_zone }}"
     type: A
   virt_apps:
-    record: "*.apps.{{ dns_virt_subdomain }}.{{ dns_base_domain }}" 
-    ips: "{{ dns_virt_ips }}"
+    record: "*.apps.{{ dns_virt_primary_subdomain }}.{{ dns_base_domain }}" 
+    ips: "{{ dns_virt_primary_ips }}"
     zone: "{{ dns_zone }}"
     type: A
   soc_api:

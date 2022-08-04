@@ -67,7 +67,7 @@
    "name": ".github/workflows/docs-pr.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "e82ca1d5cf2ab53216b85db3ea57d14009f4d88b9e7fbab89d68e447f5a4524c",
+   "chksum_sha256": "4e3cef052d8f8358434b9f0b6f67cdadf8722612cfb8ad05c406e9ff780ee2d9",
    "format": 1
   },
   {
@@ -116,7 +116,7 @@
    "name": "changelogs/changelog.yaml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "2a3f47b71869a089b1e14c7cb7cd7785c38dccc82aa332d248b71479084882bf",
+   "chksum_sha256": "4b9557c557ee28dfda6aef19f9914fcc8f6aaf64354ff5728a47dd0cd99b3f61",
    "format": 1
   },
   {
@@ -131,6 +131,13 @@
    "ftype": "dir",
    "chksum_type": null,
    "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "docs/community.aws.autoscaling_complete_lifecycle_action_module.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "e921b215caa05d5b5b1adbbaad979b8857b0152c12e81423d68a7e53025bc689",
    "format": 1
   },
   {
@@ -298,7 +305,14 @@
    "name": "docs/community.aws.aws_glue_connection_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "b24fd2f1bd18663b7be3749044e7654477bc7f468008945b94b4cf2816f40314",
+   "chksum_sha256": "99912445c82b0a257afb3dc176fa92c440a7230d040a1e234efa38717d10f96b",
+   "format": 1
+  },
+  {
+   "name": "docs/community.aws.aws_glue_crawler_module.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5a8e35d52b6789dce67dcd10d8edbabe5bafdfddb83d5b9d7c89052b8bab9c93",
    "format": 1
   },
   {
@@ -368,7 +382,7 @@
    "name": "docs/community.aws.aws_secret_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "475c44d9f074702e2c501f0526e9bd4be113a2f5ae373b041ad83dc8a5befc4d",
+   "chksum_sha256": "8535a2c6424b423822657f977f6af8199a621c8f9d4dba1f40f2c965302e1842",
    "format": 1
   },
   {
@@ -410,7 +424,7 @@
    "name": "docs/community.aws.aws_ssm_parameter_store_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "7df56bc4059078ad4fbf5467553799377be2959ccd16c3e3d7cd2f5fa1f4505b",
+   "chksum_sha256": "f02db315b0ce57f6c42caba3d7d6119cc17125a3d09eec8c76a96b6ae01e439a",
    "format": 1
   },
   {
@@ -515,7 +529,7 @@
    "name": "docs/community.aws.cloudwatchevent_rule_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "c8c4f9d11ad36f623b8d7f25e846f84dcd97284128f3dc233d6187255f1ae7bf",
+   "chksum_sha256": "0960d8d8938c0473bd3628990bcf17bf102128d36ae998dc38f8a55b354e9b05",
    "format": 1
   },
   {
@@ -655,7 +669,7 @@
    "name": "docs/community.aws.ec2_launch_template_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "85c5a25f539b422ca466d599518a41c58439e8e6b55ff57e7adaf034071a286d",
+   "chksum_sha256": "c7f94e17aa7658acfc348de579d61e456df687b2b413a163328ef8e05665fc6b",
    "format": 1
   },
   {
@@ -704,7 +718,7 @@
    "name": "docs/community.aws.ec2_scaling_policy_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "f844e65f1646a9552ee472b10040df008b590f318f2b45a9095988cc842de9e3",
+   "chksum_sha256": "d814dfe047df28935267f1b11cede4066e5d0f38cd1521a14283a7ccfcddfedc",
    "format": 1
   },
   {
@@ -781,7 +795,7 @@
    "name": "docs/community.aws.ec2_vpc_vgw_info_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "01e7a13539b85a24abf51dd2e6e9d117cdfd59666ed9c1695871a704b3f4fb19",
+   "chksum_sha256": "39f8a4dbd70f6134bab86dc4610abb2a0ec181ba9e7a87b516465920f233b234",
    "format": 1
   },
   {
@@ -830,7 +844,7 @@
    "name": "docs/community.aws.ecs_ecr_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "83d0aaf4cfdee002f80a3f3b1eb0beed2d44feb091ba5307d7adeaa7b507cdec",
+   "chksum_sha256": "576a303c37a21856f6943994157fb9f4aa6ca583cc714694973c4a29d199ae91",
    "format": 1
   },
   {
@@ -844,7 +858,7 @@
    "name": "docs/community.aws.ecs_service_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "1565a8174d2e30594a3236f05bd853b1d3afadebbb0e79000f629ad0908441d2",
+   "chksum_sha256": "93265c56400beb5fb82d8bc10892d77f5a46445157ce11d1ed386dc441309fde",
    "format": 1
   },
   {
@@ -858,7 +872,7 @@
    "name": "docs/community.aws.ecs_task_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "69e4d1bf9b33adec27942b9ae3e579f5c44062b427a6b9e6f667aaa014e1f8f6",
+   "chksum_sha256": "4ba0688e9dc668fcb1a0d504db462e4ea85cb1934e8fa2b9cefa9ea0619bbfc3",
    "format": 1
   },
   {
@@ -907,7 +921,7 @@
    "name": "docs/community.aws.elasticache_info_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "41f507de809bf077fd5ce659675d112918abb22bf8efed97804158c7493b0aad",
+   "chksum_sha256": "2cfa7ddaf6bfa440e75515748eba2a932cfe5bc97b35365ce7b61afece9b3455",
    "format": 1
   },
   {
@@ -949,7 +963,7 @@
    "name": "docs/community.aws.elb_application_lb_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "8fa49d4c8908833bc46c758df875eabf3bc69480441f055046c174c9df8c8590",
+   "chksum_sha256": "e1dd127d388cfec8c2664d0964682d59f290b7a00db93194488382133f52d626",
    "format": 1
   },
   {
@@ -970,7 +984,7 @@
    "name": "docs/community.aws.elb_network_lb_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "82ba67c7aa9d10f672101f53cc9046ed710eef2015df37f3a77bd5da57d9c2ed",
+   "chksum_sha256": "d80ede26371b38c7cf4a528e82b7a4ef82dd37b5dfcafdd740f440c8f1f72d43",
    "format": 1
   },
   {
@@ -1061,7 +1075,7 @@
    "name": "docs/community.aws.iam_policy_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "3f49226295e5df44da395698beb5d2f4070ca3dc8e07c86dd7e1bdae5e0f80b5",
+   "chksum_sha256": "74fe4ea7622079f56d7141c485fcaf5d0dbf9e82f4258c4059b9454cfc190966",
    "format": 1
   },
   {
@@ -1096,7 +1110,7 @@
    "name": "docs/community.aws.iam_server_certificate_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "89b2a96db773cd31b8d43f09b19934874147880caf8c32ba63e1eeaa489332fa",
+   "chksum_sha256": "32e5636939d56947a683969b1a7e596c5916675530327caff9dcafb1819679ad",
    "format": 1
   },
   {
@@ -1138,7 +1152,7 @@
    "name": "docs/community.aws.lambda_info_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "246eba4f27e51e54fa0087155a77a1f05a80ad70dd949584abd161051807e758",
+   "chksum_sha256": "3749341217b027f9a7dea57ef5b5f166199af0cd825d2f2900fdcafca7a91b3c",
    "format": 1
   },
   {
@@ -1160,6 +1174,13 @@
    "ftype": "file",
    "chksum_type": "sha256",
    "chksum_sha256": "df5c4f195b4c2be1232aa247d6cce3b620786671b1d70d1cc80458ce58caf455",
+   "format": 1
+  },
+  {
+   "name": "docs/community.aws.lightsail_static_ip_module.rst",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "0f3344f9dcf6f03a74bddeb56b5b0d3968984c026dc617f6412c4b2dddfcad54",
    "format": 1
   },
   {
@@ -1327,14 +1348,14 @@
    "name": "docs/community.aws.route53_health_check_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "c3a55a7c49dc87cfcfcd75257723da5599aa88f2705237cf9326beb23061dcb3",
+   "chksum_sha256": "47969d9db36f2bda657ee1ce0ab5c32418f996bd1b25dfaa6fa678bb82a4bbfe",
    "format": 1
   },
   {
    "name": "docs/community.aws.route53_info_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "eb79a1d4c80a90c2149a1b96ea44d0716cc93cc1d0b7bebded7cbb0844fab97a",
+   "chksum_sha256": "0b6d3a230bff26855800433842a9c5fd92c88b1ec44c31de999c27ef2e1cb3b5",
    "format": 1
   },
   {
@@ -1383,7 +1404,7 @@
    "name": "docs/community.aws.s3_sync_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "e0b6becfcaa8cb4d677c3f43eed885fc03c0d85ebcff995652e5614f33a43d62",
+   "chksum_sha256": "524ae5da62bb2fbea760aaab159318b2af47d549d3ca095f014512e6ecdd0785",
    "format": 1
   },
   {
@@ -1411,7 +1432,7 @@
    "name": "docs/community.aws.sns_topic_module.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "e091cf1ff58d0d1fa0a34c27081809bed0c09dcfcdf30af7f70b2f038bacada2",
+   "chksum_sha256": "8503f463dc8be2e2734afb5d3c128265ab6358a34d1157401740723c609f0ac2",
    "format": 1
   },
   {
@@ -1502,7 +1523,7 @@
    "name": "meta/runtime.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "3d5def132e342997f599c823c4a9caa21a6eecdb95dc4523496524d97c55fa15",
+   "chksum_sha256": "ec6016ce05d257a5d3c5cb3e3af3d4079cb7a5ebe302a583f21534089d99da13",
    "format": 1
   },
   {
@@ -1530,7 +1551,7 @@
    "name": "plugins/connection/aws_ssm.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "3b7ccad34d8333afc33ded8ee98b6b46739be01dfbbbf1a59c995113e234cc6d",
+   "chksum_sha256": "965d2f4812b6c11019243ed22148ddcbd0f730c0066e057af8ffaf5cd64c59d0",
    "format": 1
   },
   {
@@ -1608,6 +1629,13 @@
    "ftype": "file",
    "chksum_type": "sha256",
    "chksum_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/autoscaling_complete_lifecycle_action.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "cd18355e0a094f72064054c8d8824cc990160de49526bc7667093557d6cb4767",
    "format": 1
   },
   {
@@ -1698,7 +1726,7 @@
    "name": "plugins/modules/aws_config_aggregator.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "25c2ff058a4da524da58d6310f05886648259494f56ccf112c615e151204b9f6",
+   "chksum_sha256": "7f99c63c119311649842dabb49a55d4f6c66e958c7cd94efa2e8d65099f9823d",
    "format": 1
   },
   {
@@ -1775,7 +1803,14 @@
    "name": "plugins/modules/aws_glue_connection.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "21f8ea235f5675c2deea5212f9de228fc4c8bc1da094355cd698e1b294259346",
+   "chksum_sha256": "7dd5a5606b9fa879e687bfcd8883713483493155bc13b80b5a74552f83ec92da",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/aws_glue_crawler.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "03398c6e86b5ce406dd52722ba8cb5e6f969433b80da4f13876fefe59ff525a2",
    "format": 1
   },
   {
@@ -1803,7 +1838,7 @@
    "name": "plugins/modules/aws_kms_info.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "3617b73006ea3c8d523fd018f11e4dfde61cc5c88b29c12d09baafb89b16b649",
+   "chksum_sha256": "494e63a8b223821e7f9035db87e14d4f160a42ae884608a67549d63138e16e39",
    "format": 1
   },
   {
@@ -1845,7 +1880,7 @@
    "name": "plugins/modules/aws_secret.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "9a2ede39359b679775a49657183f793abc1baf1eed89f7c92f8e92b5eabd9f0d",
+   "chksum_sha256": "214b9f1d25dc3473603416034c0ce7e4d8b50bd3fb5dabbdfba179f53382453d",
    "format": 1
   },
   {
@@ -1880,7 +1915,7 @@
    "name": "plugins/modules/aws_ssm_parameter_store.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "a4060e2d030b07791fbe86aa12d987db49da21fd24921c76333b4815f1d10c70",
+   "chksum_sha256": "5e9b8ec295bf48421c0e761444fce5e0806a90145bb9e36f381d2f22241c32dc",
    "format": 1
   },
   {
@@ -1985,14 +2020,14 @@
    "name": "plugins/modules/cloudwatchevent_rule.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "551a69dc9f8dc8caa0b0fccbc529e8a7e6f87103b9c9f321f251099de708b7dc",
+   "chksum_sha256": "b0cbaaa8512328254e3a0da3c86331fb0f7686eef783e598301b9905d1a08964",
    "format": 1
   },
   {
    "name": "plugins/modules/cloudwatchlogs_log_group.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "8f16293894d063e83df58fbc4f3cffac39e93c04ebd1c76c90d99cb3e07d70a3",
+   "chksum_sha256": "b41c4327d915babfcc081bb65e7df33b171458200e42281b1b43b9b687877e5f",
    "format": 1
   },
   {
@@ -2125,7 +2160,7 @@
    "name": "plugins/modules/ec2_launch_template.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "842c6128fd280654ced6346912307e1e6b73f64fc7a55f1fd0a4d91c555c973c",
+   "chksum_sha256": "f8a1f326dbeefccada29fcc29fe75a1b76bdc8fc9b8cfa110d13368f0ce39dcf",
    "format": 1
   },
   {
@@ -2174,7 +2209,7 @@
    "name": "plugins/modules/ec2_scaling_policy.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "2ee7c1f32df60f2a0b84ddc98fdf564472dbd1a700658c6af7eb9cd21a436841",
+   "chksum_sha256": "f695996258b23790e35bc8700618e864bae62a152802e0c0503270b33fa85a43",
    "format": 1
   },
   {
@@ -2237,7 +2272,7 @@
    "name": "plugins/modules/ec2_vpc_peer.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "c006cedc788cdd3e2c7bfe7179d0644a993a0187e40e2ef1ff63c4dcc0209139",
+   "chksum_sha256": "a1dd7b3ca59fdb20b054e4ef0572b9612d031d088a01747539869a69dd7499a2",
    "format": 1
   },
   {
@@ -2258,7 +2293,7 @@
    "name": "plugins/modules/ec2_vpc_vgw_info.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "bc1ede464f8cea5df8289bba753f5cdd14fa479502d2767ef9d33dd3a0cc7e7e",
+   "chksum_sha256": "d8caf2ad03cffe9d56c48006af1f3ebcbd39e481810e2ee46a255af1b2a6364f",
    "format": 1
   },
   {
@@ -2300,14 +2335,14 @@
    "name": "plugins/modules/ecs_ecr.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "b98eeb49dcff1e8ceb40b696872cc7fde9069937081361446cafa9f32abe6f2a",
+   "chksum_sha256": "0234fca51440910d79afea4cc8e6ef6ffdf6524c0c4ebbf8ec551dcb48a52ced",
    "format": 1
   },
   {
    "name": "plugins/modules/ecs_service.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "8b36719c59c525addfb3e8baa1b610ffb59ad3061529ec6358a06fae8b02b141",
+   "chksum_sha256": "edab6d1fffbe95e3235bba383e89f6e38be9459735c45363e80096034f698f5a",
    "format": 1
   },
   {
@@ -2328,7 +2363,7 @@
    "name": "plugins/modules/ecs_task.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "da069eaae4e630cd06c2e512c31a32e61ff10dbf8c2951fc8bdaa81256b6242c",
+   "chksum_sha256": "6959605dbcc2b3180f996d9094d905c99f104eff6946551925c8e938c48620d1",
    "format": 1
   },
   {
@@ -2384,7 +2419,7 @@
    "name": "plugins/modules/elasticache_info.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "2d43244f07b36f6802bf0e4dd5ae34061b65c6eb01a23a47789b5408796d1e9b",
+   "chksum_sha256": "f08e5f3b23f8818db7cb68531a64b1e7579f450941ff424c05e4e5e0c0ac4946",
    "format": 1
   },
   {
@@ -2412,7 +2447,7 @@
    "name": "plugins/modules/elb_application_lb.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "d65a9698a10e83a637e1b98c05c2c0535676200c7f5dc4ee88e49b79bf25ab66",
+   "chksum_sha256": "45e32777e3747f68351a97160064b5c6e423f8179b7c73df37b0da83edb7e217",
    "format": 1
   },
   {
@@ -2440,7 +2475,7 @@
    "name": "plugins/modules/elb_network_lb.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "4908d22f8041d2ac98e5e85bdb3f13f8c31b67e4ccb42250e01b665d5b719c8f",
+   "chksum_sha256": "755df7fe1b685bdf58340c729e40b1c5f474fd9468b07f36b374f1982110f683",
    "format": 1
   },
   {
@@ -2524,7 +2559,7 @@
    "name": "plugins/modules/iam_policy.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "1d0db8d13208dbec16b3557be5ea853da581b4a548fe6b1ab0ea41fdf341a2a0",
+   "chksum_sha256": "c5234622bb8b308d70842e45424ab52298b3e0101f49a2ff9522382d4708f32a",
    "format": 1
   },
   {
@@ -2559,7 +2594,7 @@
    "name": "plugins/modules/iam_server_certificate.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "bd4c2b8ad15d02ecabae576a6104de8a5c7d173c3ec4fa7433213e3a16d9bea1",
+   "chksum_sha256": "6b72c75f76f837b3e5788e6dd0f8aa97f21f793799989070520ec962693c9049",
    "format": 1
   },
   {
@@ -2615,7 +2650,7 @@
    "name": "plugins/modules/lambda_info.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "a7d2f32727e571e8839b810935678229481c7aacbdb66ee86ba7334ff430ceb2",
+   "chksum_sha256": "45d02907f502603bd5334d4353130e9bffa3fba60c2bd302ce49770ce461592a",
    "format": 1
   },
   {
@@ -2630,6 +2665,13 @@
    "ftype": "file",
    "chksum_type": "sha256",
    "chksum_sha256": "ef0de79424ed7876a5b8998ff6eaa55dcc99ac7fa3fd68c0e639fbc9b38bc0f7",
+   "format": 1
+  },
+  {
+   "name": "plugins/modules/lightsail_static_ip.py",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "747225a40ca5a78ac4c9a187b4646f5f924c5ee8f2c24a3afd69083a047eeb7a",
    "format": 1
   },
   {
@@ -2797,21 +2839,21 @@
    "name": "plugins/modules/route53.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "5410ebb38f8e48e925dc9f3024669d97948a9669bc2ed389a8c48c249b0b3437",
+   "chksum_sha256": "899eb20229c65dc46e44c71e84d3d1eec569c8005ba2cee44c715f0030ee5a46",
    "format": 1
   },
   {
    "name": "plugins/modules/route53_health_check.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "d894ecfaf383593f9fe796fb80ef1a2b3a0977caef43aefbf7b805e8e20bc7b8",
+   "chksum_sha256": "3a0684e6e4011678697df7d556df9da7d928cc95bb81bcc3f19b3ac4a47b3422",
    "format": 1
   },
   {
    "name": "plugins/modules/route53_info.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "103a7823f4d484f4ab26b1d26ea91715ec2e2779eec7734637f95fda28f75b26",
+   "chksum_sha256": "b382ea9c7b40126f1f44858e186d9758aa8df4381d295a50aff399c3321b9d7d",
    "format": 1
   },
   {
@@ -2853,7 +2895,7 @@
    "name": "plugins/modules/s3_sync.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "82dd40a991e4950b982cdca6e079bf37c3250eecb76a8856f010cf2fad346bbc",
+   "chksum_sha256": "01c9e5c9016f40477c04459d52e23f83ac29fa214de3fb8a3fa6d22d5beb1d9a",
    "format": 1
   },
   {
@@ -2874,7 +2916,7 @@
    "name": "plugins/modules/sns_topic.py",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "7c60d9f9cb52c7ec96a2bedbdafad85ece3818c536a1ae16c212156c9d61e732",
+   "chksum_sha256": "6af71970911f9590267494aa9f03b7cdd6b089b68c72bf8aeaf32efbd298b633",
    "format": 1
   },
   {
@@ -2980,6 +3022,83 @@
    "ftype": "dir",
    "chksum_type": null,
    "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "60728e158326b2fdffaa709da64eedd22f2819b5b1113778e7ea0972884df3b9",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1c33088718db08689d0331e05f8f62ffba98125ee70cc597b822a2d8abdc2513",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/tasks/env_cleanup.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "983bd310159995c21c07ad87cf2066c455a50d562277b400c47e7cc3cef942d5",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/tasks/env_setup.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ac545b82e17c3397d0e775ee189b24f8a325e79972c83a270461df9c0cfc58d8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "c0f317084365948900d155d9c1336d4baf90526fffbddd3b996e8579ec8c19b7",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/tasks/tests.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "559d9e7f665a6464bdf917e7b25ff41cdd823995d01a8d6bb5376cabdba3ea40",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/autoscaling_complete_lifecycle_action/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7289894f07e47a82972994ae89cfaef863f54310114e1c5d7122f7fc08bc19fe",
    "format": 1
   },
   {
@@ -3441,7 +3560,7 @@
    "name": "tests/integration/targets/aws_config/tasks/main.yaml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "1901c4cc4a59d99442279b6801f69fd380585ea733f551ceace38132821c168e",
+   "chksum_sha256": "0a42fface930eba51886db39443e1d618993c525683d694fdf615bb205cfe212",
    "format": 1
   },
   {
@@ -3644,11 +3763,67 @@
    "name": "tests/integration/targets/aws_glue_connection/tasks/test_connection_network.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "81a3224c8e6fc0b94d53d03a0e82b109ad9e9abf68f13c70b09b2b05da7b4860",
+   "chksum_sha256": "0b60289a10890047041107242e0eb7757742650ad4205784a7244e43119ec379",
    "format": 1
   },
   {
    "name": "tests/integration/targets/aws_glue_connection/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7289894f07e47a82972994ae89cfaef863f54310114e1c5d7122f7fc08bc19fe",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/aws_glue_crawler",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/aws_glue_crawler/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/aws_glue_crawler/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d584b6b857bf027546648030ff610988ab382d2af0a7458771f9149a1466bcd0",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/aws_glue_crawler/meta",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/aws_glue_crawler/meta/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1e8d632f9db7209967c5b2f6d734bede09841acc7b898dafc19f31c72cee9929",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/aws_glue_crawler/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/aws_glue_crawler/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "dcb66c43d91e12b6408ca21c9494307c89a358acb75f174c0c424174214d5f50",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/aws_glue_crawler/aliases",
    "ftype": "file",
    "chksum_type": "sha256",
    "chksum_sha256": "7289894f07e47a82972994ae89cfaef863f54310114e1c5d7122f7fc08bc19fe",
@@ -3833,7 +4008,7 @@
    "name": "tests/integration/targets/aws_kms/roles/aws_kms/tasks/test_grants.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "f039f58ec310d0a52cc9c01aed99a3769e6dc536e8f5b63e64579d55ee119798",
+   "chksum_sha256": "44d20b112dea284252e7b08d737d324c2237d7318392001eb0a4f4a7f8a1d2ff",
    "format": 1
   },
   {
@@ -4225,7 +4400,7 @@
    "name": "tests/integration/targets/aws_secret/tasks/basic.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "d12c82d841852535d026a8005e13e96613dd0bf527e306e5601af8a390f9016b",
+   "chksum_sha256": "893110c0113943eca1778a8920c8105dab1f9b03d09e36af2fb3a9aeee5f779b",
    "format": 1
   },
   {
@@ -4533,7 +4708,7 @@
    "name": "tests/integration/targets/aws_ssm_parameter_store/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "a58c136dcfb6c0858ed325ac5a18bc13e9af78c543cc056c7bb52e8684f66589",
+   "chksum_sha256": "f5f80ed43d6c64e75496e25db1413290e8b11a56b25b3a1d15e5ba3d0030b693",
    "format": 1
   },
   {
@@ -5020,6 +5195,48 @@
    "format": 1
   },
   {
+   "name": "tests/integration/targets/cloudwatchevent_rule",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/cloudwatchevent_rule/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/cloudwatchevent_rule/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "24eb0cee508b8646f67136dbadc4f380cfed37a47746f6f32a4395ee1e4b8408",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/cloudwatchevent_rule/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/cloudwatchevent_rule/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "73c208b8fd45c0ea9df82d23e70be0eb967ade5dcb223406fff1fd12fe495bd8",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/cloudwatchevent_rule/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7289894f07e47a82972994ae89cfaef863f54310114e1c5d7122f7fc08bc19fe",
+   "format": 1
+  },
+  {
    "name": "tests/integration/targets/cloudwatchlogs",
    "ftype": "dir",
    "chksum_type": null,
@@ -5121,14 +5338,14 @@
    "name": "tests/integration/targets/cloudwatchlogs_log_group/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "9b23b34ace3fb66713e057734e5d629c749ca6a5af13ec818283ceddbe6df67d",
+   "chksum_sha256": "790a919cbd55d1c105f2f69883767624eef0c19d248f95432a957bb86967684c",
    "format": 1
   },
   {
    "name": "tests/integration/targets/cloudwatchlogs_log_group/tasks/tags.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "bc2ab4bfb62fdda4f9466f4e11b5d5780f412de77ed9cff8acf0a4a3c12b08b4",
+   "chksum_sha256": "1b758a1df9a41948d6394894201bffec95c9c9fe6f91c3baf68b4ec3586af47f",
    "format": 1
   },
   {
@@ -6087,7 +6304,7 @@
    "name": "tests/integration/targets/ec2_launch_template/tasks/versions.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "1695a27b1f725caa8ad49bd8ae01937ce47758a2899e283d01f3dadec40a0510",
+   "chksum_sha256": "16d85f0819393c7482212472c600dbf7e6278ce9b0c02016d860df01dd552c4f",
    "format": 1
   },
   {
@@ -6395,7 +6612,7 @@
    "name": "tests/integration/targets/ec2_scaling_policy/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "f79967690901c48cd0cd38f23863fac1361c1e61a8869510d042c3446c96000c",
+   "chksum_sha256": "fbc367e921406afcd6205835b7ad6c224fb79169221e276e47edae0fca758975",
    "format": 1
   },
   {
@@ -6710,7 +6927,7 @@
    "name": "tests/integration/targets/ec2_vpc_peer/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "9ac22ae825a1cf8f4e788168468134f84051d287589b5fc1c477817d8c1f8b86",
+   "chksum_sha256": "28e43fcefd17e48e6496391fb2ad2f71f4f56ca87a187e96be1b10f8c2ea8ff3",
    "format": 1
   },
   {
@@ -6766,7 +6983,7 @@
    "name": "tests/integration/targets/ec2_vpc_vgw/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "8fef9d1d03d6d67884b21e5e57b43003f20b2e9a991f47994dcff159111f34ee",
+   "chksum_sha256": "3773513602532a6ed817851f5c1d432d368f92f0052f2898b8d233671628ba99",
    "format": 1
   },
   {
@@ -6899,7 +7116,7 @@
    "name": "tests/integration/targets/ecs_cluster/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "4c7b43ca76845f19f1369f47f23ce3d77e2fa98ae72adf2bc3c609e700eab375",
+   "chksum_sha256": "00347e431a1730e598aa4e0088d435bc0037a08c796cd095db062712c23c6c30",
    "format": 1
   },
   {
@@ -6997,7 +7214,7 @@
    "name": "tests/integration/targets/ecs_tag/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "541649b0cf3162d6332678f9e3720fd4b7e12030d928ade7219290f3c25dacae",
+   "chksum_sha256": "3c7b629c0ade54768336a2489a1f4818b261fb068fcfde43e1136114135fe424",
    "format": 1
   },
   {
@@ -7207,14 +7424,14 @@
    "name": "tests/integration/targets/elasticache/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "945f03a311c039d86cbb9d14ac971753af6185b0b9eda7ab805ae0e4f5d720e6",
+   "chksum_sha256": "f9c9dcb2e847ee6ed349b3f28bd95b7b20f04b5f5862f391e9d49c228bfe89b8",
    "format": 1
   },
   {
    "name": "tests/integration/targets/elasticache/aliases",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "df16a364c687b68f6cdb044b16d2ff2177dfd750b5c7a11a6f6ea602dec8e44c",
+   "chksum_sha256": "88ecb16ddfe196678b98734d7618609df53d030ba3d7c7f4f9ba47d5ba741d25",
    "format": 1
   },
   {
@@ -8600,7 +8817,7 @@
    "name": "tests/integration/targets/lambda/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "0aa2f8945d7e408985248ed163814bbed7cf168465e054e8c7c7e50858d125de",
+   "chksum_sha256": "c520008a2141f6b5717b83f0cd6c73934ab81b527a4d9e3cd413be39a90ce736",
    "format": 1
   },
   {
@@ -8817,7 +9034,7 @@
    "name": "tests/integration/targets/legacy_missing_tests/aliases",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "659eef00a5ac4245e5ec927ac962313fce6589ba811cf307c16ba6c02da25ca2",
+   "chksum_sha256": "a13de359981d73d6f8e8380b4f6f0bb43075e36bd46a874dd85e2edfc18e80fb",
    "format": 1
   },
   {
@@ -8871,6 +9088,48 @@
   },
   {
    "name": "tests/integration/targets/lightsail/aliases",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "7289894f07e47a82972994ae89cfaef863f54310114e1c5d7122f7fc08bc19fe",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/lightsail_static_ip",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/lightsail_static_ip/defaults",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/lightsail_static_ip/defaults/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1fda63eccc1ffd3f1b83fe4538498c152a594647be1911bf550b0afd1cf73e56",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/lightsail_static_ip/tasks",
+   "ftype": "dir",
+   "chksum_type": null,
+   "chksum_sha256": null,
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/lightsail_static_ip/tasks/main.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "5747d0da6dccc9cf15411438ce07223e3c412d14287944213d5c0c8750c822ec",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/lightsail_static_ip/aliases",
    "ftype": "file",
    "chksum_type": "sha256",
    "chksum_sha256": "7289894f07e47a82972994ae89cfaef863f54310114e1c5d7122f7fc08bc19fe",
@@ -10098,7 +10357,7 @@
    "name": "tests/integration/targets/route53/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "0a67efa58391e2f26b51b16feda1d809e856c482ef2e51138468d73b39865dee",
+   "chksum_sha256": "f94b8be9242fd06d23d0a5508f13b1c9b03bb7a0f7c077b50016256cdafc3f50",
    "format": 1
   },
   {
@@ -10140,7 +10399,7 @@
    "name": "tests/integration/targets/route53_health_check/defaults/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "73535f6d05da48945cdf88596ca5bc7983964a24dfa8f46257ce7fff0abe88f8",
+   "chksum_sha256": "73f221ffbb930d0cb87617f499e226b671443b8bbff90a2344da709316f52db3",
    "format": 1
   },
   {
@@ -10165,10 +10424,24 @@
    "format": 1
   },
   {
+   "name": "tests/integration/targets/route53_health_check/tasks/create_multiple_health_checks.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "ef9df671287e597fdd0804e785faa94dec80297d751730268d1179efed5751a4",
+   "format": 1
+  },
+  {
    "name": "tests/integration/targets/route53_health_check/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "0fae6712fe4987fe8f63ffd4c168440f8df37acf6687b3ff511eeac0fbc2d91a",
+   "chksum_sha256": "4bac3112b52e93c60e77c4b6d5a9efbedc45a94070ea9269934f5c47b3a33369",
+   "format": 1
+  },
+  {
+   "name": "tests/integration/targets/route53_health_check/tasks/update_delete_by_id.yml",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "d9ee306b45c52bd6c5af0f209bd7a99bd6e88a758ccb7381f966e6e272d01ccf",
    "format": 1
   },
   {
@@ -10560,7 +10833,7 @@
    "name": "tests/integration/targets/s3_sync/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "b7db6ca31755c9f885052e098468dd06394839ad1eee15a6e040016044d08afd",
+   "chksum_sha256": "95ade18af0dfd21032a825fe943999a35517480f9a24a737b46b886a3c8d973a",
    "format": 1
   },
   {
@@ -10889,7 +11162,7 @@
    "name": "tests/integration/targets/sns_topic/defaults/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "c940e90b61f6244065d7f178dd852ea9c1bbbf62362f6bd43ed79976eeec0a97",
+   "chksum_sha256": "c44e2dd96bab5a86a7bec2ba112d0e18e0deb9c5be72040a413351d6a1501917",
    "format": 1
   },
   {
@@ -10945,7 +11218,7 @@
    "name": "tests/integration/targets/sns_topic/tasks/main.yml",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "15e8399affe95046b8dc0d0f97ed13a5643499721067d23f7362fb5fad45d8fc",
+   "chksum_sha256": "6263c1e6d4a3d4865f3d5ed29b6e95c9196c152ae2fc2e5b8957ca0fc12f1852",
    "format": 1
   },
   {
@@ -15660,6 +15933,13 @@
    "format": 1
   },
   {
+   "name": "tests/galaxy-importer.cfg",
+   "ftype": "file",
+   "chksum_type": "sha256",
+   "chksum_sha256": "1ddc855071567d4f69792ff53b0edcb3ae735e5db0f3a20f9b573750332348ef",
+   "format": 1
+  },
+  {
    "name": "tests/requirements.yml",
    "ftype": "file",
    "chksum_type": "sha256",
@@ -15677,7 +15957,7 @@
    "name": "CHANGELOG.rst",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "0fbd612f6cbefd9a11de5b2c2c2b34491f634b483cd6c413ed2e8dec61acecd4",
+   "chksum_sha256": "9b5f2c56b64ce1c9013b4310188368179b41a283b832876b9975c2267e0312de",
    "format": 1
   },
   {
@@ -15698,7 +15978,7 @@
    "name": "README.md",
    "ftype": "file",
    "chksum_type": "sha256",
-   "chksum_sha256": "74233e60fa0bf1526f8bf7d9931c7ce9e2c37ca8cd6578d8af3b850bed444f34",
+   "chksum_sha256": "d95ded73de3e60d95782d314861b8abf3d81351d919f609604929e412e850c2e",
    "format": 1
   },
   {

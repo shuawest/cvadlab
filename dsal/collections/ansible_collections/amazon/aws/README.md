@@ -8,8 +8,6 @@ AWS related modules and plugins supported by the Ansible community are in the [c
 
 This collection has been tested against following Ansible versions: **>=2.9.10**.
 
-For collections that support Ansible 2.9, please ensure you update your `network_os` to use the
-fully qualified collection name (for example, `cisco.ios.ios`).
 Plugins and modules within a collection may be tested with only specific Ansible versions.
 A collection may contain metadata that identifies these versions.
 PEP440 is the schema used to describe the versions of Ansible.
@@ -17,7 +15,14 @@ PEP440 is the schema used to describe the versions of Ansible.
 
 ## Python version compatibility
 
-As the AWS SDK for Python (Boto3 and Botocore) has [ceased supporting Python 2.7](https://aws.amazon.com/blogs/developer/announcing-end-of-support-for-python-2-7-in-aws-sdk-for-python-and-aws-cli-v1/), this collection requires Python 3.6 or greater.
+This collection depends on the AWS SDK for Python (Boto3 and Botocore).  Due to the
+[AWS SDK Python Support Policy](https://aws.amazon.com/blogs/developer/python-support-policy-updates-for-aws-sdks-and-tools/)
+this collection requires Python 3.6 or greater.
+
+Amazon have also announced the end of support for
+[Python less than 3.7](https://aws.amazon.com/blogs/developer/python-support-policy-updates-for-aws-sdks-and-tools/).
+As such support for Python less than 3.7 by this collection has been deprecated and will be removed in a release
+after 2023-05-31.
 
 ## AWS SDK version compatibility
 
@@ -33,60 +38,60 @@ All support for the original AWS SDK `boto` was removed in release 4.0.0.
 ### Inventory plugins
 Name | Description
 --- | ---
-[amazon.aws.aws_ec2](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.aws_ec2_inventory.rst)|EC2 inventory source
-[amazon.aws.aws_rds](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.aws_rds_inventory.rst)|rds instance source
+[amazon.aws.aws_ec2](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.aws_ec2_inventory.rst)|EC2 inventory source
+[amazon.aws.aws_rds](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.aws_rds_inventory.rst)|rds instance source
 
 ### Lookup plugins
 Name | Description
 --- | ---
-[amazon.aws.aws_account_attribute](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.aws_account_attribute_lookup.rst)|Look up AWS account attributes.
-[amazon.aws.aws_secret](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.aws_secret_lookup.rst)|Look up secrets stored in AWS Secrets Manager.
-[amazon.aws.aws_service_ip_ranges](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.aws_service_ip_ranges_lookup.rst)|Look up the IP ranges for services provided in AWS such as EC2 and S3.
-[amazon.aws.aws_ssm](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.aws_ssm_lookup.rst)|Get the value for a SSM parameter or all parameters under a path.
+[amazon.aws.aws_account_attribute](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.aws_account_attribute_lookup.rst)|Look up AWS account attributes.
+[amazon.aws.aws_secret](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.aws_secret_lookup.rst)|Look up secrets stored in AWS Secrets Manager.
+[amazon.aws.aws_service_ip_ranges](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.aws_service_ip_ranges_lookup.rst)|Look up the IP ranges for services provided in AWS such as EC2 and S3.
+[amazon.aws.aws_ssm](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.aws_ssm_lookup.rst)|Get the value for a SSM parameter or all parameters under a path.
 
 ### Modules
 Name | Description
 --- | ---
-[amazon.aws.aws_az_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.aws_az_info_module.rst)|Gather information about availability zones in AWS
-[amazon.aws.aws_caller_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.aws_caller_info_module.rst)|Get information about the user and account being used to make AWS calls
-[amazon.aws.cloudformation](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.cloudformation_module.rst)|Create or delete an AWS CloudFormation stack
-[amazon.aws.cloudformation_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.cloudformation_info_module.rst)|Obtain information about an AWS CloudFormation stack
-[amazon.aws.ec2_ami](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_ami_module.rst)|Create or destroy an image (AMI) in ec2
-[amazon.aws.ec2_ami_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_ami_info_module.rst)|Gather information about ec2 AMIs
-[amazon.aws.ec2_eni](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_eni_module.rst)|Create and optionally attach an Elastic Network Interface (ENI) to an instance
-[amazon.aws.ec2_eni_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_eni_info_module.rst)|Gather information about ec2 ENI interfaces in AWS
-[amazon.aws.ec2_group](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_group_module.rst)|Maintain an ec2 VPC security group
-[amazon.aws.ec2_group_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_group_info_module.rst)|Gather information about ec2 security groups in AWS
-[amazon.aws.ec2_instance](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_instance_module.rst)|Create & manage EC2 instances
-[amazon.aws.ec2_instance_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_instance_info_module.rst)|Gather information about ec2 instances in AWS
-[amazon.aws.ec2_key](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_key_module.rst)|Create or delete an ec2 key pair
-[amazon.aws.ec2_metadata_facts](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_metadata_facts_module.rst)|Gathers facts (instance metadata) about remote hosts within EC2
-[amazon.aws.ec2_snapshot](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_snapshot_module.rst)|Creates a snapshot from an existing volume
-[amazon.aws.ec2_snapshot_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_snapshot_info_module.rst)|Gathers information about EC2 volume snapshots in AWS
-[amazon.aws.ec2_spot_instance](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_spot_instance_module.rst)|Request, stop, reboot or cancel spot instance
-[amazon.aws.ec2_spot_instance_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_spot_instance_info_module.rst)|Gather information about ec2 spot instance requests
-[amazon.aws.ec2_tag](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_tag_module.rst)|Create and remove tags on ec2 resources
-[amazon.aws.ec2_tag_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_tag_info_module.rst)|List tags on ec2 resources
-[amazon.aws.ec2_vol](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vol_module.rst)|Create and attach a volume, return volume id and device map
-[amazon.aws.ec2_vol_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vol_info_module.rst)|Gather information about ec2 volumes in AWS
-[amazon.aws.ec2_vpc_dhcp_option](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_dhcp_option_module.rst)|Manages DHCP Options, and can ensure the DHCP options for the given VPC match what's requested
-[amazon.aws.ec2_vpc_dhcp_option_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_dhcp_option_info_module.rst)|Gather information about dhcp options sets in AWS
-[amazon.aws.ec2_vpc_endpoint](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_endpoint_module.rst)|Create and delete AWS VPC Endpoints.
-[amazon.aws.ec2_vpc_endpoint_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_endpoint_info_module.rst)|Retrieves AWS VPC endpoints details using AWS methods
-[amazon.aws.ec2_vpc_endpoint_service_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_endpoint_service_info_module.rst)|Retrieves AWS VPC endpoint service details
-[amazon.aws.ec2_vpc_igw](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_igw_module.rst)|Manage an AWS VPC Internet gateway
-[amazon.aws.ec2_vpc_igw_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_igw_info_module.rst)|Gather information about internet gateways in AWS
-[amazon.aws.ec2_vpc_nat_gateway](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_nat_gateway_module.rst)|Manage AWS VPC NAT Gateways
-[amazon.aws.ec2_vpc_nat_gateway_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_nat_gateway_info_module.rst)|Retrieves AWS VPC Managed Nat Gateway details using AWS methods
-[amazon.aws.ec2_vpc_net](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_net_module.rst)|Configure AWS virtual private clouds
-[amazon.aws.ec2_vpc_net_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_net_info_module.rst)|Gather information about ec2 VPCs in AWS
-[amazon.aws.ec2_vpc_route_table](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_route_table_module.rst)|Manage route tables for AWS virtual private clouds
-[amazon.aws.ec2_vpc_route_table_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_route_table_info_module.rst)|Gather information about ec2 VPC route tables in AWS
-[amazon.aws.ec2_vpc_subnet](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_subnet_module.rst)|Manage subnets in AWS virtual private clouds
-[amazon.aws.ec2_vpc_subnet_info](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.ec2_vpc_subnet_info_module.rst)|Gather information about ec2 VPC subnets in AWS
-[amazon.aws.elb_classic_lb](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.elb_classic_lb_module.rst)|Creates, updates or destroys an Amazon ELB
-[amazon.aws.s3_bucket](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.s3_bucket_module.rst)|Manage S3 buckets in AWS, DigitalOcean, Ceph, Walrus, FakeS3 and StorageGRID
-[amazon.aws.s3_object](https://github.com/ansible-collections/amazon.aws/blob/main/docs/amazon.aws.s3_object_module.rst)|Manage objects in S3
+[amazon.aws.aws_az_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.aws_az_info_module.rst)|Gather information about availability zones in AWS
+[amazon.aws.aws_caller_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.aws_caller_info_module.rst)|Get information about the user and account being used to make AWS calls
+[amazon.aws.cloudformation](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.cloudformation_module.rst)|Create or delete an AWS CloudFormation stack
+[amazon.aws.cloudformation_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.cloudformation_info_module.rst)|Obtain information about an AWS CloudFormation stack
+[amazon.aws.ec2_ami](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_ami_module.rst)|Create or destroy an image (AMI) in ec2
+[amazon.aws.ec2_ami_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_ami_info_module.rst)|Gather information about ec2 AMIs
+[amazon.aws.ec2_eni](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_eni_module.rst)|Create and optionally attach an Elastic Network Interface (ENI) to an instance
+[amazon.aws.ec2_eni_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_eni_info_module.rst)|Gather information about ec2 ENI interfaces in AWS
+[amazon.aws.ec2_group](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_group_module.rst)|Maintain an ec2 VPC security group
+[amazon.aws.ec2_group_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_group_info_module.rst)|Gather information about ec2 security groups in AWS
+[amazon.aws.ec2_instance](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_instance_module.rst)|Create & manage EC2 instances
+[amazon.aws.ec2_instance_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_instance_info_module.rst)|Gather information about ec2 instances in AWS
+[amazon.aws.ec2_key](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_key_module.rst)|Create or delete an ec2 key pair
+[amazon.aws.ec2_metadata_facts](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_metadata_facts_module.rst)|Gathers facts (instance metadata) about remote hosts within EC2
+[amazon.aws.ec2_snapshot](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_snapshot_module.rst)|Creates a snapshot from an existing volume
+[amazon.aws.ec2_snapshot_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_snapshot_info_module.rst)|Gathers information about EC2 volume snapshots in AWS
+[amazon.aws.ec2_spot_instance](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_spot_instance_module.rst)|Request, stop, reboot or cancel spot instance
+[amazon.aws.ec2_spot_instance_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_spot_instance_info_module.rst)|Gather information about ec2 spot instance requests
+[amazon.aws.ec2_tag](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_tag_module.rst)|Create and remove tags on ec2 resources
+[amazon.aws.ec2_tag_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_tag_info_module.rst)|List tags on ec2 resources
+[amazon.aws.ec2_vol](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vol_module.rst)|Create and attach a volume, return volume id and device map
+[amazon.aws.ec2_vol_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vol_info_module.rst)|Gather information about ec2 volumes in AWS
+[amazon.aws.ec2_vpc_dhcp_option](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_dhcp_option_module.rst)|Manages DHCP Options, and can ensure the DHCP options for the given VPC match what's requested
+[amazon.aws.ec2_vpc_dhcp_option_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_dhcp_option_info_module.rst)|Gather information about dhcp options sets in AWS
+[amazon.aws.ec2_vpc_endpoint](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_endpoint_module.rst)|Create and delete AWS VPC Endpoints.
+[amazon.aws.ec2_vpc_endpoint_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_endpoint_info_module.rst)|Retrieves AWS VPC endpoints details using AWS methods
+[amazon.aws.ec2_vpc_endpoint_service_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_endpoint_service_info_module.rst)|Retrieves AWS VPC endpoint service details
+[amazon.aws.ec2_vpc_igw](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_igw_module.rst)|Manage an AWS VPC Internet gateway
+[amazon.aws.ec2_vpc_igw_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_igw_info_module.rst)|Gather information about internet gateways in AWS
+[amazon.aws.ec2_vpc_nat_gateway](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_nat_gateway_module.rst)|Manage AWS VPC NAT Gateways
+[amazon.aws.ec2_vpc_nat_gateway_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_nat_gateway_info_module.rst)|Retrieves AWS VPC Managed Nat Gateway details using AWS methods
+[amazon.aws.ec2_vpc_net](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_net_module.rst)|Configure AWS virtual private clouds
+[amazon.aws.ec2_vpc_net_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_net_info_module.rst)|Gather information about ec2 VPCs in AWS
+[amazon.aws.ec2_vpc_route_table](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_route_table_module.rst)|Manage route tables for AWS virtual private clouds
+[amazon.aws.ec2_vpc_route_table_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_route_table_info_module.rst)|Gather information about ec2 VPC route tables in AWS
+[amazon.aws.ec2_vpc_subnet](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_subnet_module.rst)|Manage subnets in AWS virtual private clouds
+[amazon.aws.ec2_vpc_subnet_info](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.ec2_vpc_subnet_info_module.rst)|Gather information about ec2 VPC subnets in AWS
+[amazon.aws.elb_classic_lb](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.elb_classic_lb_module.rst)|Creates, updates or destroys an Amazon ELB
+[amazon.aws.s3_bucket](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.s3_bucket_module.rst)|Manage S3 buckets in AWS, DigitalOcean, Ceph, Walrus, FakeS3 and StorageGRID
+[amazon.aws.s3_object](https://github.com/ansible-collections/amazon.aws/blob/stable-4/docs/amazon.aws.s3_object_module.rst)|Manage objects in S3
 
 <!--end collection content-->
 
@@ -104,6 +109,15 @@ collections:
   - name: amazon.aws
 ```
 
+A specific version of the collection can be installed by using the `version` keyword in the `requirements.yml` file:
+
+```yaml
+---
+collections:
+  - name: amazon.aws
+    version: 3.1.1
+```
+
 The python module dependencies are not installed by `ansible-galaxy`.  They can
 be manually installed using pip:
 
@@ -114,7 +128,6 @@ or:
     pip install boto3 botocore
 
 ## Using this collection
-
 
 You can either call modules by their Fully Qualified Collection Namespace (FQCN), such as `amazon.aws.ec2_instance`, or you can call modules by their short name if you list the `amazon.aws` collection in the playbook's `collections` keyword:
 
@@ -144,11 +157,12 @@ You can either call modules by their Fully Qualified Collection Namespace (FQCN)
 
 ## Contributing to this collection
 
-We welcome community contributions to this collection. If you find problems, please open an issue or create a PR against the [Amazon AWS collection repository](https://github.com/ansible-collections/amazon.aws). See [Contributing to Ansible-maintained collections](https://docs.ansible.com/ansible/devel/community/contributing_maintained_collections.html#contributing-maintained-collections) for more details.
+We welcome community contributions to this collection. If you find problems, please open an issue or create a PR against the [Amazon AWS collection repository](https://github.com/ansible-collections/amazon.aws).
+See [Contributing to Ansible-maintained collections](https://docs.ansible.com/ansible/devel/community/contributing_maintained_collections.html#contributing-maintained-collections) for more details.
 
 You can also join us on:
 
-- IRC - the ``#ansible-aws`` [irc.libera.chat](https://libera.chat/) channel
+- Libera.Chat IRC - the ``#ansible-aws`` [irc.libera.chat](https://libera.chat/) channel
 
 ### More information about contributing
 
@@ -169,6 +183,7 @@ You can also join us on:
 - [Ansible Collection overview](https://github.com/ansible-collections/overview)
 - [Ansible User guide](https://docs.ansible.com/ansible/latest/user_guide/index.html)
 - [Ansible Developer guide](https://docs.ansible.com/ansible/latest/dev_guide/index.html)
+- [Ansible Collection Developer Guide](https://docs.ansible.com/ansible/devel/dev_guide/developing_collections.html)
 - [Ansible Community code of conduct](https://docs.ansible.com/ansible/latest/community/code_of_conduct.html)
 
 ## Licensing

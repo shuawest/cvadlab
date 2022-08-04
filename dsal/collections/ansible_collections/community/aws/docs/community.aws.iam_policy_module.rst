@@ -211,7 +211,6 @@ Parameters
                 <td>
                         <div>A properly json formatted policy as string.</div>
                         <div>Mutually exclusive with <em>policy_document</em>.</div>
-                        <div>See <a href='https://github.com/ansible/ansible/issues/7005#issuecomment-42894813'>https://github.com/ansible/ansible/issues/7005#issuecomment-42894813</a> on how to use it properly.</div>
                 </td>
             </tr>
             <tr>
@@ -415,7 +414,7 @@ Common return values are documented `here <https://docs.ansible.com/ansible/late
             <tr>
                 <td colspan="1">
                     <div class="ansibleOptionAnchor" id="return-"></div>
-                    <b>policies</b>
+                    <b>policy_names</b>
                     <a class="ansibleOptionLink" href="#return-" title="Permalink to this return value"></a>
                     <div style="font-size: small">
                       <span style="color: purple">list</span>
