@@ -29,10 +29,8 @@
       validate_certs: false
       reset_type: "{{ target_state }}"
 
-  #  - debug: 
-  #     msg:
-  #     - "host {{ imetalhost }}" 
-  #     - "Stopping {{ metalhost.idrac }}" 
-  #     - "target_state {{ target_state }}" 
-
+  - name: Show results  
+    debug: 
+      msg: 
+      - "{{ metalhost.idrac }} {{ target_state }}" 
 
