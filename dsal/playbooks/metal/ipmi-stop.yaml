@@ -1,8 +1,0 @@
-
-- hosts: client
-  vars_files: 
-  - "{{ secrets_file }}"
-  tasks: 
-
-    # loop over hosts and stop the servers
-    

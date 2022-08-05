@@ -1,0 +1,38 @@
+
+- hosts: client
+  vars_files: 
+  - "{{ secrets_file }}"
+  tasks:
+
+  - name: Check hosts_to_stop variable is specified
+    assert:
+      that:
+        - hosts_to_stop is defined
+      fail_msg: "You must specify the hosts_to_stop. Eg: ./ap.sh playbooks/metal/idrac-power.yaml --extra-vars=\"hosts_to_stop=dell-r640-038.dsal.lab.eng.tlv2.redhat.com\" --extra-vars=\"target_state=on\""
+  
+  - name: Check target_state variable is specified
+    assert:
+      that:
+        - target_state is defined
+      fail_msg: "You must specify the target_state as \"on\", \"GracefulShutdown\", etc. Eg: ./ap.sh playbooks/metal/idrac-power.yaml --extra-vars=\"hosts_to_stop=dell-r640-038.dsal.lab.eng.tlv2.redhat.com\" --extra-vars=\"target_state=On\""
+
+  - name: Set power state on target hosts {{ hosts_to_stop }}
+    with_items: "{{ hosts_to_stop.split(',') | list }}"
+    loop_control: 
+      loop_var: imetalhost
+    vars:
+      metalhost: "{{ hostvars[imetalhost] }}"
+    dellemc.openmanage.redfish_powerstate:
+      baseuri: "{{ metalhost.idrac }}"
+      username: "{{ ipmi_user }}"
+      password: "{{ ipmi_pass }}"
+      validate_certs: false
+      reset_type: "{{ target_state }}"
+
+  #  - debug: 
+  #     msg:
+  #     - "host {{ imetalhost }}" 
+  #     - "Stopping {{ metalhost.idrac }}" 
+  #     - "target_state {{ target_state }}" 
+
+

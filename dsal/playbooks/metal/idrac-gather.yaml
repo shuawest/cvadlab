@@ -1,0 +1,31 @@
+
+# https://galaxy.ansible.com/dellemc/openmanage
+# https://github.com/dell/dellemc-openmanage-ansible-modules/tree/collections/docs
+# https://github.com/dell/dellemc-openmanage-ansible-modules 
+# https://dell.github.io/dellemc-openmanage-ansible-modules/GUID-EA8B2754-D62E-4D2C-8951-636D49B0CAA5.html
+
+- hosts: client
+  vars_files: 
+  - "{{ secrets_file }}"
+  tasks: 
+
+    # loop over hosts for inventory information
+
+    - name: Get hardware inventory
+      with_items: "{{ groups['metal_hosts'] }}"
+      loop_control: 
+        loop_var: imetalhost
+      dellemc.openmanage.dellemc_get_system_inventory:
+        idrac_ip:  "{{ hostvars[imetalhost].idrac }}"
+        idrac_user:  "{{ ipmi_user }}"
+        idrac_password:  "{{ ipmi_pass }}"
+        validate_certs: false
+      register: idrac_info
+
+    - name: Print iDRAC details
+      debug: 
+        msg: 
+        - "iDRAC hosts"
+        - "{{ idrac_info }}"
+
+
